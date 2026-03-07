@@ -47,3 +47,8 @@ if "time" in command:
     current_time = datetime.datetime.now().strftime("%H:%M")
     print(current_time)
     speak(f"The time is {current_time}")
+
+if "youtube" in command:
+    print("Opening youtube")
+    speak("Opening youtube")
+    webbrowser.open("https://www.youtube.com")
