@@ -66,4 +66,9 @@ if "notepad" in command:
     speak("Opening notepad")
     os.system("notepad")
 
+if "open calculator" in command:
+    print("Opening calculator")
+    speak("Opening Calculator")
+    os.system("calc")
+
 
