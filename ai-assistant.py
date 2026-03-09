@@ -3,6 +3,7 @@ import datetime
 import speech_recognition as sr
 import time
 import webbrowser
+import os
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -47,7 +48,7 @@ print(command)
 if "time" in command:
     current_time = datetime.datetime.now().strftime("%H:%M")
     print(current_time)
-    speak(f"The time is {current_time}")
+
     speak(f"The time is {current_time}")
 
 if "youtube" in command:
@@ -59,3 +60,10 @@ if "google" in command:
     print("Opening google")
     speak("Opening google")
     webbrowser.open("https://www.google.com")
+
+if "notepad" in command:
+    print("Opening notepad")
+    speak("Opening notepad")
+    os.system("notepad")
+
+
