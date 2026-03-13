@@ -1,4 +1,4 @@
-# Jarvis AI Assistant
+# AI Assistant
 
 A simple voice assistant built with Python.
 
